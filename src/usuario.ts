@@ -1,16 +1,14 @@
-export class Usuario{
-
+export class Usuario {
     constructor(
+      public nombreUsuario: string,
+      public email: string,
+      public password: string,
+      public fechaRegistro: Date,
+      public fotoPerfil: string = '',
+      public seguidores: string[] = [],
+      public siguiendo: Usuario[] = [],
+      public fotosSubidas: string[] = []
+    ) {}
+  }
+  
 
-       public nombreUsuario: string,
-       public email: string,
-       public password: string,
-       public fechaRegistro: Date,
-       public fotoPerfil: string,
-       public seguidores:  Usuario,
-       public siguiendo:  Usuario,
-       public fotosSubidas:  string
-          
-    ){}
-
-}
