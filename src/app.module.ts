@@ -3,10 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { PetsService } from './pets/pets.service';
+import { FotosModule } from './fotos/fotos.module';
 import { PetsService } from './pets/pets.service';
 
 @Module({
-  imports: [UsuariosModule],
+  imports: [UsuariosModule, FotosModule],
   controllers: [AppController],
   providers: [AppService, PetsService],
 })
